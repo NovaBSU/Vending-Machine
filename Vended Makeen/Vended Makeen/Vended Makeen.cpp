@@ -1,10 +1,18 @@
 #include<iostream>
 #include<string>
+#include<vector>
+#include<fstream>
 
 using namespace std;
 
 bool backBool = 0;
 bool success = 0;
+int xhash = 0;
+
+vector<string> cMenu{};
+
+char filein[5000] = "NULL";
+string filestring = "NULL";
 
 string hotDrink[7] = {"1", "hot drink", "Hot Drink", "hot Drink", "Hot drink", "hot", "Hot"};
 string coldDrink[7] = {"2", "cold drink", "Cold Drink", "cold Drink", "Cold drink", "cold", "Cold"};
@@ -15,10 +23,57 @@ string back[5] = {"b", "B", "back", "Back", "BACK"};
 
 string userInput = "NULL";
 
+void btru() {
+	backBool = true;
+}
+
+void hDrink() {
+	cout << "Hot Drinks Menu" << endl;
+	ifstream hDrkMenu;
+	hDrkMenu.open("hDrkMenu.txt");
+	hDrkMenu.seekg(0);
+	hDrkMenu.getline(filein, 2, '\n');
+	filestring = filein;
+	xhash = stoi(filestring.substr(0,1)); // this works..?? why
+	for (xhash == 0; xhash--;) {
+		hDrkMenu.getline(filein, 2, '\n');
+		filestring = filein;
+	}
+
+
+
+	cout << "1. Coffee (Black)" << endl << "2. Coffee (White)" << endl << "3. Tea (Black)" << endl << "4. Tea (White)" << endl << "5. Hot Chocolate" << endl << endl;
+	cin >> userInput;
+}
+
+void cDrink() {
+	cout << "Cold Drinks Menu" << endl;
+	cout << "1. Coke" << endl << "2. Pepsi" << endl << "3. Fanta" << endl << "4. Oasis" << endl << "5. Iced Tea" << endl << endl;
+	cin >> userInput;
+}
+
+void svSnk() {
+	cout << "Savoury Snacks Menu" << endl;
+	cout << "1. Cornish Pastry" << endl << "2. Crossiant" << endl << "3. Breakfast Bar" << endl << "4. Pepperami" << endl << "5. Fridge Raiders" << endl << endl;
+	cin >> userInput;
+}
+
+void swSnk() {
+	cout << "Sweets Menu" << endl;
+	cout << "1. Dairy Milk" << endl << "2. Aero" << endl << "3. Bounty" << endl << "4. Freddo" << endl << "5. Wine Gums" << endl << endl;
+	cin >> userInput;
+}
+
+void uItm() {
+	cout << "Misc Menu" << endl;
+	cout << "1. Powerbank" << endl << "2. Charger (USB C)" << endl << "3. Charger (Micro USB)" << endl << "4. Charger (Lightning)" << endl << "5. US to UK plug" << endl << endl;
+	cin >> userInput;
+}
+
 void displayMenu() {
 	cout << "What type of product are you looking for?" << endl;
 	cout << "1. Hot Drinks" << endl << "2. Cold Drinks" << endl << "3. Savoury Snacks" << endl << "4. Sweet Snacks" << endl << "5. Utility Items" << endl << endl;
-	
+
 	getline(cin, userInput);
 
 	while (cin.fail()) {
@@ -31,27 +86,33 @@ void displayMenu() {
 
 	for (int i = 0; i < 7; i++) {
 		if (userInput == hotDrink[i]) {
-			cout << "success";
+			hDrink();
+			break;
 		}
 		else if (userInput == coldDrink[i]) {
-			cout << "success";
+			cDrink();
+			break;
 		}
 		else if (userInput == savourySnack[i]) {
-			cout << "success";
+			svSnk();
+			break;
 		}
 		else if (userInput == sweetSnack[i]) {
-			cout << "success";
+			swSnk();
+			break;
 		}
 		else if (userInput == utilityItem[i]) {
-			cout << "success";
+			uItm();
+			break;
 		}
 		else if (userInput == back[i]) {
-			backBool = true;
+			btru();
 			break;
 		}
 		else if (i == 6 and success == 0) {
 			cout << "You input an invalid input" << endl << endl;
-			backBool = true;
+			btru();
+			break;
 		}
 	}
 }
