@@ -36,14 +36,14 @@ void hDrink() {
 	filestring = filein;
 	xhash = stoi(filestring.substr(0,1)); // this works..?? why
 	for (xhash == 0; xhash--;) {
-		hDrkMenu.getline(filein, 2, '\n');
-		filestring = filein;
+		hDrkMenu.getline(filein, 2, '\n'); // USE A GOT DANG STRING
+		filestring = filein; // WHY DO I HAVE TO DO WEIRD CONVERSIONS LIKE THIS
+		cMenu.push_back(filestring);
 	}
 
-
-
-	cout << "1. Coffee (Black)" << endl << "2. Coffee (White)" << endl << "3. Tea (Black)" << endl << "4. Tea (White)" << endl << "5. Hot Chocolate" << endl << endl;
-	cin >> userInput;
+	for (xhash == 0; xhash--;) {
+		cout << cMenu[xhash] << endl;
+	}
 }
 
 void cDrink() {
