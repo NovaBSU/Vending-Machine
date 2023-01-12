@@ -160,7 +160,7 @@ void dev() {
 
 		// Now we take a price from the user, check it against cin.fail
 		// then push it to the back of the vector.
-		cout << "How much would you like to charge for this item?" << endl;
+		cout << "How much would you like to charge for this item? (pounds.pence)" << endl;
 		cin >> fileFloat;
 		int fileFloatInt = fileFloat * 100;
 		fileFloat = fileFloatInt;
@@ -168,7 +168,7 @@ void dev() {
 		while (cin.fail()) { 
 			cin.clear(); 
 			cin.ignore(256000, '\n'); 
-			cout << "Input Error. Please input currency in numbers." << endl;
+			cout << "Input Error. Please input currency in numbers. (pounds.pence)" << endl;
 			cin >> fileFloat;
 		}
 
@@ -232,7 +232,7 @@ void dev() {
 
 		poMenu.close();
 
-		cout << "Do you wish to add another item?" << endl;
+		cout << "Do you wish to add another item? (y/n)" << endl;
 		cin >> userInput;
 		errorCheck();
 		if (userInput != "Y" and userInput != "yes" and userInput != "Yes" and userInput != "y") {

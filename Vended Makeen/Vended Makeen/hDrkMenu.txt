@@ -1,6 +1,7 @@
-5
+6
 Tea
 Coffee
 Mocha
+Latte
 Hot Chocolate
-Boiled Deodurant
+Green Tea
