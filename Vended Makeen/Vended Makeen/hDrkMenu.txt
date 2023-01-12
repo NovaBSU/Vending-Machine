@@ -1,7 +1,6 @@
-6
-Dumb
-Dumber
-Dumbest
-Dumbesterer
+5
+Tea
+Coffee
+Mocha
+Hot Chocolate
 Boiled Deodurant
-fail
