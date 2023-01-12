@@ -1,4 +1,14 @@
 ﻿  Vended Makeen.cpp
-C:\Users\461962\Documents\GitHub\Vended-Makeen\Vended Makeen\Vended Makeen\Vended Makeen.cpp(38,13): warning C4553: '==': result of expression not used; did you intend '='?
-C:\Users\461962\Documents\GitHub\Vended-Makeen\Vended Makeen\Vended Makeen\Vended Makeen.cpp(44,13): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\461962\Documents\GitHub\Vended-Makeen\Vended Makeen\Vended Makeen\Vended Makeen.cpp(77,17): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\461962\Documents\GitHub\Vended-Makeen\Vended Makeen\Vended Makeen\Vended Makeen.cpp(165,20): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\461962\Documents\GitHub\Vended-Makeen\Vended Makeen\Vended Makeen\Vended Makeen.cpp(166,15): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\461962\Documents\GitHub\Vended-Makeen\Vended Makeen\Vended Makeen\Vended Makeen.cpp(366,23): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\461962\Documents\GitHub\Vended-Makeen\Vended Makeen\Vended Makeen\Vended Makeen.cpp(367,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\461962\Documents\GitHub\Vended-Makeen\Vended Makeen\Vended Makeen\Vended Makeen.cpp(387,16): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\461962\Documents\GitHub\Vended-Makeen\Vended Makeen\Vended Makeen\Vended Makeen.cpp(388,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\461962\Documents\GitHub\Vended-Makeen\Vended Makeen\Vended Makeen\Vended Makeen.cpp(427,19): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\461962\Documents\GitHub\Vended-Makeen\Vended Makeen\Vended Makeen\Vended Makeen.cpp(431,19): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\461962\Documents\GitHub\Vended-Makeen\Vended Makeen\Vended Makeen\Vended Makeen.cpp(435,20): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\461962\Documents\GitHub\Vended-Makeen\Vended Makeen\Vended Makeen\Vended Makeen.cpp(439,20): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\461962\Documents\GitHub\Vended-Makeen\Vended Makeen\Vended Makeen\Vended Makeen.cpp(443,20): warning C4305: '-=': truncation from 'double' to 'float'
   Vended Makeen.vcxproj -> C:\Users\461962\Documents\GitHub\Vended-Makeen\Vended Makeen\x64\Debug\Vended Makeen.exe
