@@ -525,7 +525,7 @@ void displayMenu() {
 	string hotDrink[7] = { "1", "hot drink", "Hot Drink", "hot Drink", "Hot drink", "hot", "Hot" };
 	string coldDrink[7] = { "2", "cold drink", "Cold Drink", "cold Drink", "Cold drink", "cold", "Cold" };
 	string savourySnack[7] = { "3", "savoury snack", "Savoury Snack", "savoury Snack", "Savoury snack", "savoury", "Savoury" };
-	string sweetSnack[7] = { "4", "sweet snack", "Sweet Snack", "sweet Snack", "Sweet snack", "Savoury", "Sweet" };
+	string sweetSnack[7] = { "4", "sweet snack", "Sweet Snack", "sweet Snack", "Sweet snack", "sweet", "Sweet" };
 	string back[5] = { "b", "B", "back", "Back", "BACK" };
 
 	bool success = 0;
@@ -606,7 +606,10 @@ int main() {
 		backBool = false; 
 		cin.clear();
 		cin.ignore(256000, '\n');
-		displayMenu(); 
+		menuType = "NULL";
+		cMenu.clear();
+		pMenu.clear();
+		displayMenu();
 	}
 	return 0;
 	
